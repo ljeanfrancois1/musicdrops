@@ -148,7 +148,7 @@ h5.sotw-header{
   margin-right: auto;
   display: block;
   max-height: 100%;
-  margin 0 auto;
+  margin: 0 auto;
   padding-top: 50px;
   animation-duration: 1s;
   animation-name: fadeIn;
