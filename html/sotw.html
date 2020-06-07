@@ -1,10 +1,12 @@
+<!DOCTYPE html>
 <html>
     <head>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="../styling/style.css" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Bebas+Neue|Berkshire+Swash|Cinzel|Courier+Prime|Cutive+Mono|Montserrat+Subrayada|Righteous|Six+Caps|Major+Mono+Display|Staatliches|UnifrakturMaguntia&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Bebas+Neue|Berkshire+Swash|Cinzel|Courier+Prime|Cutive+Mono|Montserrat+Subrayada|Righteous|Six+Caps|Playfair+Display|Major+Mono+Display|Staatliches|UnifrakturMaguntia&display=swap" rel="stylesheet">
         <script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.min.js"></script>
         <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Drops</title>
     </head>
     <body class="sotw">
@@ -20,41 +22,24 @@
         </div>
     </div> -->
         <div id="container">
-            <div id="left">
+            <div id="left" class="col-xs-1 col-sm-1 col-md-4 col-lg-3 col-xl-3 p-0">
                 <div class="header">
-                    <a id="sotw-home-button" href="index.html">Home</a>
-                    <a id="sotw-new-music-button" href="newmusic.html">New Music</a>
-                    <a id="sotw-sotw-button" href="sotw.html">Song of the Week</a>
-                    <a id="sotw-about-button" href="about.html">About</a>
+                    <a class="sotw" id="sotw-home-button" href="index.html"><span class="nav-font">Home</span></a>
+                    <a class="sotw" id="sotw-new-music-button" href="newmusic.html"><span class="nav-font">New Music</span></a>
+                    <a class="sotw" id="sotw-sotw-button" href="sotw.html"><span class="nav-font">Song of the Week</span></a>
+                    <a class="sotw" id="sotw-about-button" href="about.html"><span class="nav-font">About</span></a>
                 </div>            
             </div>
-            <div id="middle">
-                <h2 id="sotw-title" style="font-family: 'Major Mono Display', monospace;">Title: Alone Again</h2>
+            <div id="middle" class="col-xs-1 col-sm-1 col-md-5 col-lg-6 col-xl-6 p-0">
+                <h2 id="sotw-title" style="font-family: Playfair Display;">Title: Alone Again</h2>
                 <figure>
-                    <img id="sotw-image" src="/images/theweeknd.jpg" alt="The Weeknd 'After Hours' album cover">
+                    <img id="sotw-image" src="../images/theweeknd.jpg" alt="The Weeknd 'After Hours' album cover">
                 </figure>
-                <h2 style=" text-align:center; font-family: 'Major Mono Display', monospace;">Artist: The Weeknd</h2>
-            </div>
-            <div id="right">
-                <h3 style="text-align: center; font-family: Bebas Neue;">The Scoop</h3>
+                <h2 style=" text-align:center; font-family: Playfair Display;">Artist: The Weeknd</h2>
+            </div> 
+            <div id="right" class="col-xs-1 col-sm-1 col-md-4 col-lg-3 col-xl-3 p-0">
+                <h3 style="text-align: center; font-family: Righteous;">The Scoop</h3>
             </div>
         </div>
     </body>
 </html>
-
-<script>
-
-// $('a').hover(function() {
-//     $('a').css({opacity: '0.7'});
-//     $(this).css({opacity: '1'});
-// }, function() {
-//     $('a').css({opacity: '1'})}
-// );
-
-// $('.article-feed').infiniteScroll({
-//   path: '.pagination__next',
-//   append: '.article',
-//   status: '.scroller-status',
-//   hideNav: '.pagination',
-// });
-</script>

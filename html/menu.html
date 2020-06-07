@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -15,21 +16,25 @@
             <a id="about-button" href="about.html">About</a>
         </div>
     </body>
+    <footer>
+        <h5 style="text-align:center; padding-top:5px;">Placeholder Text &copy;</h5>
+    </footer>
+    <script>
+
+        $('a').hover(function() {
+            $('a').css({opacity: '0.7'});
+            $(this).css({opacity: '1'});
+        }, function() {
+            $('a').css({opacity: '1'})}
+        );
+        
+        // $('.article-feed').infiniteScroll({
+        //   path: '.pagination__next',
+        //   append: '.article',
+        //   status: '.scroller-status',
+        //   hideNav: '.pagination',
+        // });
+        </script>
 </html>
 
-<script>
 
-$('a').hover(function() {
-    $('a').css({opacity: '0.7'});
-    $(this).css({opacity: '1'});
-}, function() {
-    $('a').css({opacity: '1'})}
-);
-
-// $('.article-feed').infiniteScroll({
-//   path: '.pagination__next',
-//   append: '.article',
-//   status: '.scroller-status',
-//   hideNav: '.pagination',
-// });
-</script>
